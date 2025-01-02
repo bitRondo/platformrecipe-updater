@@ -11,5 +11,6 @@ with open(DIFF_FILE_PATH, "r") as diffFile:
         if "Pull" in line:
             images.append("eu.gcr.io/" + line.split()[2])
 
-with open(IMAGE_FILE_PATH, "w") as imageFile:
-    imageFile.write("\n".join(images))
+if (len(images) > 0):
+    with open(IMAGE_FILE_PATH, "w") as imageFile:
+        imageFile.write("\n".join(images))

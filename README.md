@@ -12,3 +12,11 @@ Then run the script.
 chmod +x ./runRecipeUpdate.sh
 ./runRecipeUpdate.sh
 ```
+
+#### Note:
+When you run the script, it will prompt you to decide if you want pull the latest `master` branch of `platformrecipe`.
+You can use the `-p` flag to make it automatic.
+i.e.,
+```
+./runRecipeUpdate.sh -p
+```
